@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HVAC Heroes AZ — proposed homepage mockup</title>
+<style>
+  :root {
+    --navy: #0f2744;
+    --navy-2: #16365c;
+    --orange: #e85d04;
+    --orange-h: #d04f00;
+    --bg: #f5f7fa;
+    --text: #1a2332;
+    --muted: #5b6b7c;
+    --line: #e3e8ef;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #dfe6ee;
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 24px 12px 40px;
+  }
+  .frame { width: 100%; max-width: 420px; }
+  .badge { font-size: 12px; color: var(--muted); text-align: center; margin-bottom: 10px; }
+  .phone {
+    background: #fff; border-radius: 28px; overflow: hidden;
+    box-shadow: 0 18px 50px rgba(15,39,68,.22); border: 1px solid #c9d3df;
+  }
+  header {
+    background: var(--navy); color: #fff; padding: 14px 16px;
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  }
+  .logo { font-weight: 700; font-size: 15px; letter-spacing: .2px; }
+  .phone-link {
+    color: #fff; text-decoration: none; font-size: 13px; font-weight: 600;
+    background: rgba(255,255,255,.12); padding: 7px 10px; border-radius: 999px; white-space: nowrap;
+  }
+  .hero {
+    background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 55%, #1f4f7a 100%);
+    color: #fff; padding: 28px 18px 22px;
+  }
+  .pill {
+    display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .4px;
+    text-transform: uppercase; background: rgba(255,255,255,.14);
+    padding: 5px 9px; border-radius: 999px; margin-bottom: 14px;
+  }
+  .hero h1 { font-size: 26px; line-height: 1.2; margin-bottom: 8px; }
+  .hero p { font-size: 14px; line-height: 1.45; color: rgba(255,255,255,.86); margin-bottom: 18px; }
+  .cta {
+    display: block; text-align: center; text-decoration: none; background: var(--orange);
+    color: #fff; font-weight: 700; font-size: 16px; padding: 14px 16px; border-radius: 12px;
+  }
+  .trust { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
+  .trust span {
+    background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.14);
+    border-radius: 10px; padding: 8px 10px; font-size: 12px; text-align: center;
+  }
+  .services { padding: 16px; background: var(--bg); display: grid; gap: 10px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 14px 14px 12px; }
+  .card strong { display: block; font-size: 15px; margin-bottom: 4px; }
+  .card p { font-size: 13px; color: var(--muted); line-height: 1.4; }
+  footer {
+    background: var(--navy); color: rgba(255,255,255,.85); padding: 14px 16px 18px;
+    font-size: 12px; line-height: 1.5; text-align: center;
+  }
+  footer b { color: #fff; }
+  .note { margin-top: 14px; font-size: 12px; color: var(--muted); text-align: center; line-height: 1.45; }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="badge">SiteCare concept mockup · hvacheroesaz.com</div>
+    <div class="phone">
+      <header>
+        <div class="logo">HVAC Heroes AZ</div>
+        <a class="phone-link" href="tel:6025757977">602-575-7977</a>
+      </header>
+      <section class="hero">
+        <div class="pill">Phoenix · Laveen · Maricopa County</div>
+        <h1>Cool homes. Fast response. Clear next step.</h1>
+        <p>AC repair, maintenance plans, and installs — with one obvious number to call.</p>
+        <a class="cta" href="tel:6025757977">Call 602-575-7977</a>
+        <div class="trust">
+          <span>Licensed ROC349005</span>
+          <span>Local HVAC team</span>
+        </div>
+      </section>
+      <section class="services">
+        <div class="card">
+          <strong>AC Repair</strong>
+          <p>Same-day help when the system stops cooling.</p>
+        </div>
+        <div class="card">
+          <strong>Maintenance Plans</strong>
+          <p>Keep the system running before peak season hits.</p>
+        </div>
+        <div class="card">
+          <strong>Installation</strong>
+          <p>Straightforward quotes for replacement units.</p>
+        </div>
+      </section>
+      <footer>
+        <b>HVAC Heroes AZ</b><br />
+        Licensed ROC349005 · Copyright © 2026
+      </footer>
+    </div>
+    <p class="note">Fixes shown vs current site: clear Call button, “Maintenance” spelled correctly, license up front, no broken hero image, no cookie banner covering the first screen.</p>
+  </div>
+</body>
+</html>
